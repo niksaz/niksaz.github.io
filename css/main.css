@@ -32,6 +32,46 @@ a:hover {
   text-decoration: underline;
 }
 
+nav {
+  border-bottom: 1px solid #d5d5d5;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 0px 15px;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.nav-right ul {
+  font-size: .8em;
+}
+
+.nav-left ul li {
+  margin-right: 20px;
+  display: inline;
+  float: left;
+}
+
+.nav-right ul li {
+  margin-left: 20px;
+  display: inline;
+  float: right;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-left ul li {
+  float: left;
+}
+
+.nav-right ul li {
+  float: right;
+}
+
 .container {
   max-width: 1024px;
   width: 95%;
@@ -55,7 +95,6 @@ a:hover {
   left: 2em;
   top: 1em;
   display: block;
-  /*font-family: "Roboto", sans-serif;*/
   font-weight: bold;
   font-size: 0.8rem;
 }
@@ -71,24 +110,4 @@ a:hover {
   content: "";
   border: 2px solid rgba(0, 0, 0, 0.3);
   background: white;
-}
-
-nav ul, footer ul {
-  padding: 0;
-  list-style: none;
-  font-weight: bold;
-}
-
-nav ul li, footer ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav {
-  border-bottom: 1px solid #d5d5d5;
-}
-
-footer {
-  border-top: 1px solid #d5d5d5;
-  font-size: .8em;
 }
