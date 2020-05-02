@@ -5,7 +5,7 @@
 
 	<!-- Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142144726-1"></script>
-	<script>
+	<script type="text/javascript">
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
@@ -36,7 +36,7 @@
 				<li><a href="https://github.com/niksaz">github</a></li>
 				<li><a href="https://www.linkedin.com/in/mikita-sazanovich">linkedin</a></li>
 				<li><a href="https://twitter.com/mkSazanovich">twitter</a></li>
-				<li><a href="mailto:nikitasazanovich@gmail.com">email</a></li>
+				<li><span id="email">email</span></li>
 			</ul>
 		</div>
 	</nav>
@@ -155,6 +155,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script type="text/javascript">
+		emailAddress = 'gmail.com'
+		emailAddress = ('nikitasazanovich' + '@' + emailAddress)
+		document.getElementById('email').innerHTML=('<A href="mailto:' + emailAddress + '">' + 'email</a>')
+	</script>
 
 </body>
 
