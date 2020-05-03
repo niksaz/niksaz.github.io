@@ -23,7 +23,7 @@
 
 <body>
 
-	<nav>
+	<div class="nav" id="nav">
 		<div class="nav-left">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -39,7 +39,7 @@
 				<li><span id="email">email</span></li>
 			</ul>
 		</div>
-	</nav>
+	</div>
 
 	<div class="container">
 		<div class="blurb">
@@ -162,6 +162,17 @@
 		emailAddress = 'gmail.com'
 		emailAddress = ('nikitasazanovich' + '@' + emailAddress)
 		document.getElementById('email').innerHTML=('<A href="mailto:' + emailAddress + '">' + 'email</a>')
+
+		window.onscroll = function() {stickyFunction()};
+		let navElement = document.getElementById('nav');
+		let stickyOffset = navElement.offsetTop;
+		function stickyFunction() {
+			if (window.pageYOffset > stickyOffset) {
+				navElement.classList.add('sticky');
+			} else {
+				navElement.classList.remove('sticky');
+			}
+		}
 	</script>
 
 </body>
