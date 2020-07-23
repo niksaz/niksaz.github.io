@@ -87,6 +87,10 @@ a:hover {
   margin: 0px auto;
 }
 
+.top-header {
+  padding-top: 20px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -106,6 +110,3 @@ a:hover {
   margin-right: auto;
 }
 
-.highlights-header {
-  padding-top: 20px;
-}
